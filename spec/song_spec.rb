@@ -12,6 +12,7 @@ describe "Song" do
     Song.class_variable_set(:@@count, 0)
     Song.class_variable_set(:@@artist_count, {})
     Song.class_variable_set(:@@genre_count, {})
+    Song.class_variable_set(:@@all, [])
 
   end
   describe "#new" do 
@@ -82,3 +83,5 @@ describe "Song" do
     end
   end
 end
+
+
